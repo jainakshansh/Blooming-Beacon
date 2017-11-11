@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.bloomingbeacon.bloomingbeacon.EventDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_event_detail"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <ImageView
+            android:id="@+id/event_detailed_image"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/our_vision"
+            android:padding="8dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/event_date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/trolleyGray"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/event_title_detailed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textColor="@color/vividCerulean"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/event_desc_detailed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/event_location_detailed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yellowgradient"
+            android:drawableStart="@drawable/ic_location_on_event"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+</ScrollView>

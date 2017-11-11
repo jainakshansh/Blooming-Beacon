@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@android:color/white" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/hierarchy_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@android:color/white"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/hierarchy_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="16dp"
+        android:textColor="@android:color/white"
+        android:textSize="23sp"
+        tools:text="Akshansh Jain" />
+
+    <TextView
+        android:id="@+id/hierarchy_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:gravity="center"
+        android:paddingBottom="24dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:paddingTop="16dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        tools:text="Android Developer" />
+
+</LinearLayout>

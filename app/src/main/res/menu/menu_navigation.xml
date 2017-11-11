@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/welcome_to_blooming_beacon">
+        <menu>
+            <item
+                android:id="@+id/home_landing"
+                android:icon="@drawable/ic_home"
+                android:title="@string/home" />
+
+            <item
+                android:id="@+id/about_us"
+                android:icon="@drawable/ic_about_us"
+                android:title="@string/about_us" />
+
+            <item
+                android:id="@+id/our_vision"
+                android:icon="@drawable/ic_our_vision"
+                android:title="@string/our_vision" />
+
+            <item
+                android:id="@+id/chat_landing"
+                android:icon="@drawable/ic_chat"
+                android:title="@string/chat" />
+        </menu>
+    </item>
+
+    <item android:title="@string/our_team">
+        <menu>
+            <item
+                android:id="@+id/_17_18"
+                android:icon="@drawable/ic_team"
+                android:title="@string/_2017_2018" />
+
+            <item
+                android:id="@+id/_16_17"
+                android:icon="@drawable/ic_team"
+                android:title="@string/_2016_2017" />
+
+            <item
+                android:id="@+id/_15_16"
+                android:icon="@drawable/ic_team"
+                android:title="@string/_2015_2016" />
+
+            <item
+                android:id="@+id/_14_15"
+                android:icon="@drawable/ic_team"
+                android:title="@string/_2014_2015" />
+        </menu>
+    </item>
+
+    <item android:title="@string/developer">
+        <menu>
+            <item
+                android:id="@+id/contact_developer"
+                android:icon="@drawable/ic_developer"
+                android:title="@string/contact_developer" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/sponsor_landing"
+        android:icon="@drawable/ic_sponsors"
+        android:title="@string/sponsor" />
+
+    <item
+        android:id="@+id/donate_bb"
+        android:icon="@drawable/ic_donate"
+        android:title="@string/donate" />
+
+    <item
+        android:id="@+id/login_register"
+        android:icon="@drawable/ic_sign_in"
+        android:title="@string/login_register" />
+
+    <item android:title="@string/application">
+        <menu>
+            <item
+                android:id="@+id/exit_application"
+                android:icon="@drawable/ic_exit"
+                android:title="@string/exit_application" />
+        </menu>
+    </item>
+
+</menu>

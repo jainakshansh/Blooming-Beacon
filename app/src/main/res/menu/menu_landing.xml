@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/donate_bb"
+        android:icon="@drawable/ic_donate_white"
+        android:title="@string/donate"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/contact_us"
+        android:title="@string/contact_us"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/our_location"
+        android:title="@string/our_location"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/feedback_sgeestion"
+        android:title="@string/feedback_suggestion"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/rate_us"
+        android:title="@string/rate_us"
+        app:showAsAction="never" />
+
+</menu>

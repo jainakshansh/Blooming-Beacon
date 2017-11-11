@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".Sidebar.RegisterActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_register"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/let_s_get_you_settled_in"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/name"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/reg_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/blooming_beacon"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/trolleyGray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/e_mail"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/reg_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/bloomingbeacon_gmail_com"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/trolleyGray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/password"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/reg_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/trolleyGray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/contact_number"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/reg_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/_987654321"
+                android:inputType="number"
+                android:maxEms="10"
+                android:maxLines="1"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/trolleyGray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/date_of_birth"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/reg_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/_16_01_1997"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/trolleyGray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/hometown"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/reg_hometown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/chennai_tamil_nadu"
+                android:inputType="textAutoComplete"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/trolleyGray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/expected_graduation_year"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/reg_graduation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/_2019"
+                android:inputType="number"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/trolleyGray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/majors_or_stream"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/reg_stream"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/computer_science"
+                android:inputType="textAutoComplete"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/trolleyGray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/college_issued_id"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/reg_college_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/srm123456"
+                android:inputType="textAutoComplete"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/trolleyGray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/languages"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/reg_cb_hindi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hindi"
+                android:textColor="@android:color/black"
+                app:buttonTint="@android:color/black" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/reg_cb_english"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/english"
+                android:textColor="@android:color/black"
+                app:buttonTint="@android:color/black" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/reg_cb_tamil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tamil"
+                android:textColor="@android:color/black"
+                app:buttonTint="@android:color/black" />
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:id="@+id/reg_cb_telugu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/telugu"
+                android:textColor="@android:color/black"
+                app:buttonTint="@android:color/black" />
+
+            <EditText
+                android:id="@+id/reg_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/other_sanskrit_example"
+                android:inputType="textAutoComplete"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/trolleyGray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/department_you_re_interested_in"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/reg_department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:maxLines="2"
+                android:text="@string/why_are_you_interested_in_social_service"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/reg_interested"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/because_i_love_it_and"
+                android:inputType="textAutoComplete|textMultiLine"
+                android:maxLines="3"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/trolleyGray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/major_notable_skills"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/reg_skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/android_developer"
+                android:inputType="textAutoComplete|textMultiLine"
+                android:maxLines="3"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/trolleyGray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/how_can_you_help_blooming_beacon"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/reg_how_help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/i_can_impart_my_skill_set_to_the_underprivileged"
+                android:inputType="textAutoComplete|textMultiLine"
+                android:maxLines="3"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/trolleyGray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/do_you_have_any_previous_experience"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/reg_radio_exp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/reg_radio_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yes"
+                    android:textColor="@android:color/black"
+                    app:buttonTint="@android:color/black" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/reg_radio_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/no"
+                    android:textColor="@android:color/black"
+                    app:buttonTint="@android:color/black" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/reg_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="48dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/greengradient_button"
+                android:text="@string/register"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

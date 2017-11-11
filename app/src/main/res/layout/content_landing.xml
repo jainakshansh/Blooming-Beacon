@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:showIn="@layout/app_bar_landing">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/facebook_bb"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/blooming_beacon"
+                android:padding="8dp"
+                android:src="@drawable/fb_logo" />
+
+            <ImageView
+                android:id="@+id/website_bb"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/blooming_beacon"
+                android:padding="4dp"
+                android:src="@drawable/app_logo" />
+
+            <ImageView
+                android:id="@+id/instagram_bb"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/blooming_beacon"
+                android:padding="8dp"
+                android:src="@drawable/instagram_logo" />
+
+            <ImageView
+                android:id="@+id/youtube_bb"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/blooming_beacon"
+                android:padding="8dp"
+                android:src="@drawable/youtube_logo" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_landing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:clipToPadding="true"
+            android:scrollbars="none" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="start"
+            android:text="@string/recent_updates"
+            android:textColor="@color/middleGreen"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/wu_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/time_weekly_updates"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/darkBlueSlate"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/update_weekly_updates"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="5dp"
+                android:layout_weight="2"
+                android:gravity="start|center_vertical"
+                android:textColor="@color/darkBlueSlate"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/event_date_latest"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:background="@drawable/bluegradient"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="40sp"
+                    tools:text="16" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/event_date_extra_latest"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bluegradient"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    tools:text="January, 1997" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/event_name_latest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="2dp"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="17sp"
+                    tools:text="Android with Akshansh" />
+
+                <TextView
+                    android:id="@+id/event_description_latest"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:maxLines="4"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:textColor="@color/pineapple"
+                    android:textSize="15sp"
+                    tools:text="Learn Android in a month with the incredible Akshansh Jain. Hahah!" />
+
+                <TextView
+                    android:id="@+id/event_location_latest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:drawableStart="@drawable/ic_location_on_event"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:textSize="14sp"
+                    android:textStyle="italic|bold"
+                    tools:text="Mira Road, Mumbai" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/view_more_events"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/greengradient"
+            android:text="@string/more"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>

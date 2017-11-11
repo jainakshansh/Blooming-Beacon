@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "400557426844",
+    "firebase_url": "https://blooming-beacon.firebaseio.com",
+    "project_id": "blooming-beacon",
+    "storage_bucket": "blooming-beacon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400557426844:android:70dadf86a94324f9",
+        "android_client_info": {
+          "package_name": "in.bloomingbeacon.bloomingbeacon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400557426844-1g467rp8nafm6hc3jh1vr044tnd92aqe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.bloomingbeacon.bloomingbeacon",
+            "certificate_hash": "c396080ed4202729d9032299470bfeb0d5a48c33"
+          }
+        },
+        {
+          "client_id": "400557426844-f7lsqsk4ei5gu8r23hmsglj2t6hgdave.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRSz5w2BhA6DNAN3j2kesaka9tPxGZytI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "400557426844-f7lsqsk4ei5gu8r23hmsglj2t6hgdave.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
