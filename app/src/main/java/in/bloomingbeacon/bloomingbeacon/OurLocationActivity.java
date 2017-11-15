@@ -54,7 +54,7 @@ public class OurLocationActivity extends FragmentActivity implements OnMapReadyC
         LatLng srm = new LatLng(Float.valueOf(latitude), Float.valueOf(longitude));
         mMap.addMarker(new MarkerOptions().position(srm).title(location));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(srm));
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(srm, 15));
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(srm, 25));
     }
 
     @Override
