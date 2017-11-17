@@ -402,15 +402,18 @@ public class LandingActivity extends AppCompatActivity implements NavigationView
             case R.id.contact_us:
                 startActivity(new Intent(getApplicationContext(), ContactUsActivity.class));
                 break;
+                /*
             case R.id.our_location:
                 startActivity(new Intent(getApplicationContext(), OurLocationActivity.class));
                 break;
+                */
             case R.id.feedback_sgeestion:
                 Intent feedSuggestIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts("mailto", "bloomingbeacon@gmail.com", null));
                 feedSuggestIntent.putExtra(Intent.EXTRA_SUBJECT, "Feedback / Suggestions for Blooming Beacon");
                 startActivity(Intent.createChooser(feedSuggestIntent, "Choose e-mail provider "));
                 break;
             case R.id.rate_us:
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=in.bloomingbeacon.bloomingbeacon")));
                 break;
         }
         return true;

@@ -13,10 +13,12 @@
         android:title="@string/contact_us"
         app:showAsAction="never" />
 
+    <!--
     <item
         android:id="@+id/our_location"
         android:title="@string/our_location"
         app:showAsAction="never" />
+    -->
 
     <item
         android:id="@+id/feedback_sgeestion"

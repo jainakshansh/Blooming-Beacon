@@ -79,7 +79,7 @@
             android:parentActivityName=".LandingActivity" />
         <activity
             android:name=".EventDetailActivity"
-            android:parentActivityName=".EventsListActivity"></activity>
+            android:parentActivityName=".EventsListActivity" />
     </application>
 
 </manifest>
