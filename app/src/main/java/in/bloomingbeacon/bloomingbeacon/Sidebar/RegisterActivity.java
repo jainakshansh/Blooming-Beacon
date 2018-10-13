@@ -67,6 +67,8 @@ public class RegisterActivity extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
     private DatabaseReference databaseReference;
 
+    private int timesRegistered;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -81,6 +83,8 @@ public class RegisterActivity extends AppCompatActivity {
             getSupportActionBar().setTitle("Register");
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
+
+        timesRegistered = 0;
 
         regName = (EditText) findViewById(R.id.reg_name);
         regEmail = (EditText) findViewById(R.id.reg_email);
@@ -109,8 +113,13 @@ public class RegisterActivity extends AppCompatActivity {
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                takeInInfo();
-                registerUser();
+                if (timesRegistered < 2) {
+                    takeInInfo();
+                    registerUser();
+                    timesRegistered++;
+                } else {
+                    Toast.makeText(RegisterActivity.this, "You have already registered!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
