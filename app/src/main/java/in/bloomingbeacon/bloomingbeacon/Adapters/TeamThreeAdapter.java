@@ -62,7 +62,7 @@ public class TeamThreeAdapter extends RecyclerView.Adapter<TeamThreeAdapter.Team
         holder.team_post.setText(teamThree.getThree_post());
         holder.team_post.setTypeface(regular);
         holder.team_post.setBackgroundResource(R.drawable.greengradient);
-        Picasso.with(context)
+        Picasso.get()
                 .load(teamThree.getThree_image())
                 .into(holder.team_image);
     }

@@ -62,7 +62,7 @@ public class TeamFourAdapter extends RecyclerView.Adapter<TeamFourAdapter.TeamFo
         holder.team_post.setText(teamFour.getFour_post());
         holder.team_post.setTypeface(regular);
         holder.team_post.setBackgroundResource(R.drawable.bluegradient);
-        Picasso.with(context)
+        Picasso.get()
                 .load(teamFour.getFour_image())
                 .into(holder.team_image);
     }

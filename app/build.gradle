@@ -4,7 +4,7 @@ android {
     signingConfigs {
         config {
             keyAlias 'key0'
-            keyPassword 'dhing@25742674'
+            keyPassword 'p@$$w0rd'
             storeFile file('C:/Users/Akshansh/AndroidStudioProjects/BloomingBeaconAkshansh.jks')
             storePassword 'dhing@25742674'
         }
@@ -14,8 +14,8 @@ android {
         applicationId "in.bloomingbeacon.bloomingbeacon"
         minSdkVersion 21
         targetSdkVersion 28
-        versionCode 7
-        versionName "1.5"
+        versionCode 8
+        versionName "1.6"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -42,6 +42,7 @@ dependencies {
     implementation 'com.squareup.picasso:picasso:2.71828'
     implementation 'com.google.android.gms:play-services-maps:16.0.0'
     implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.google.firebase:firebase-core:16.0.4'
     implementation 'com.google.firebase:firebase-database:16.0.3'
     implementation 'com.google.firebase:firebase-storage:16.0.3'
     implementation 'com.google.firebase:firebase-auth:16.0.4'

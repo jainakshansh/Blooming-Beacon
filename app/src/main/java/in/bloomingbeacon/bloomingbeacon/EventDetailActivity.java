@@ -53,7 +53,7 @@ public class EventDetailActivity extends AppCompatActivity {
         medium = Typeface.createFromAsset(getAssets(), "fonts/poppinsm.ttf");
         regular = Typeface.createFromAsset(getAssets(), "fonts/poppinsr.ttf");
 
-        Picasso.with(getApplicationContext())
+        Picasso.get()
                 .load(image)
                 .into(event_image);
         event_date_time.setText(datetime);

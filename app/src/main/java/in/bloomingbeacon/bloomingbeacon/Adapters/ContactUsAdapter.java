@@ -65,7 +65,7 @@ public class ContactUsAdapter extends RecyclerView.Adapter<ContactUsAdapter.Cont
         holder.name.setTypeface(poppins_bold);
         holder.designation.setText(contactUsItem.getCu_desc());
         holder.designation.setTypeface(poppins_regular);
-        Picasso.with(context)
+        Picasso.get()
                 .load(contactUsItem.getCu_image())
                 .into(holder.image);
         holder.call.setOnClickListener(new View.OnClickListener() {

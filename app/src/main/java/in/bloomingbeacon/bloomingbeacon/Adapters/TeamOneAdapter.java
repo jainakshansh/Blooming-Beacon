@@ -62,7 +62,7 @@ public class TeamOneAdapter extends RecyclerView.Adapter<TeamOneAdapter.TeamOneH
         holder.team_post.setText(teamOne.getOne_post());
         holder.team_post.setTypeface(regular);
         holder.team_post.setBackgroundResource(R.drawable.redgradient);
-        Picasso.with(context)
+        Picasso.get()
                 .load(teamOne.getOne_image())
                 .into(holder.team_image);
     }

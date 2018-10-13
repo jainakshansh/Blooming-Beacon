@@ -78,4 +78,5 @@
     <string name="computer_science">Computer Science</string>
     <string name="recent_updates">Recent Updates</string>
     <string name="more">More</string>
+    <string name="note_to_user_about_information">We will be saving the information that you\'ve entered above. We assure you that this information isn\'t shared with anyone else and that we store the information securely to the best of our knowledge.</string>
 </resources>

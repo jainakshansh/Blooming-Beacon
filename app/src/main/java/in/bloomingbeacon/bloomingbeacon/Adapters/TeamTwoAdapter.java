@@ -2,7 +2,6 @@ package in.bloomingbeacon.bloomingbeacon.Adapters;
 
 import android.content.Context;
 import android.graphics.Typeface;
-import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +12,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+import androidx.recyclerview.widget.RecyclerView;
 import in.bloomingbeacon.bloomingbeacon.Objects.TeamTwo;
 import in.bloomingbeacon.bloomingbeacon.R;
 
@@ -62,7 +62,7 @@ public class TeamTwoAdapter extends RecyclerView.Adapter<TeamTwoAdapter.TeamTwoH
         holder.team_post.setText(teamTwo.getTwo_post());
         holder.team_post.setTypeface(regular);
         holder.team_post.setBackgroundResource(R.drawable.yellowgradient);
-        Picasso.with(context)
+        Picasso.get()
                 .load(teamTwo.getTwo_image())
                 .into(holder.team_image);
     }

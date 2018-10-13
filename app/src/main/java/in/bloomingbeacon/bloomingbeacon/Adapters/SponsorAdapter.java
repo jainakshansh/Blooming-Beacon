@@ -64,7 +64,7 @@ public class SponsorAdapter extends RecyclerView.Adapter<SponsorAdapter.SponsorV
             holder.sponsorName.setBackgroundResource(R.drawable.bluegradient);
         }
 
-        Picasso.with(context)
+        Picasso.get()
                 .load(sponsorItem.getImage())
                 .into(holder.sponsorImage);
         if (sponsorItem.getUrl() != null) {
